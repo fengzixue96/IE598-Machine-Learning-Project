@@ -1,0 +1,47 @@
+Form teams of no more than 4 persons.  (The structure of this project lends itself well to division of labor).
+
+The project will use two datasets located in the Datasets folder.
+
+MLF_GP1_CreditScore contains 1700 observations of 26 financial and accounting metrics changes for a set of firms in several different industries.
+The Class label is the Moody's credit rating assigned to the firm in the following quarter.  
+Certain ratings are considered "Investment Grade" (=1), other ratings are not (=0) and consequently may not be held in certain institutional portfolios 
+(pension plans, etc.)
+
+This is a classification problem; 
+using the features, X, and the machine learning techniques from this class, 
+classify the Moody's score (multiclass classification) and the Investment Grade (binary classification). 
+Not both at the same time!  Two models - one multiclass, one binary class.
+
+MLF_GP2_EconCycle contains 223 monthly observations of the US Treasury bond yield curve, 
+the commercial paper yield curve and the USPHCI Economic Activity Index.  
+In 1993 Friedman and Kuttner published a paper entitled "Why does the Paper-Bill spread predict real economic activity?"  
+They found evidence that the spread on commercial paper, a short term form of corporate borrowing, 
+and the US Treasury bill widens before recessions and contracts after and could be a useful predictor of real economic activity.  
+We will not rigorously replicate this study, but instead use it as the basis for a regression exercise in machine learning.  
+(Although this is a time series dataset, we will not be using it as such. 
+
+You should discard the Date column and treat each row as an independent observation.  
+You should also standardize all your data, otherwise your model will overfit to the level, since USHPCI is rising throughout this period.  
+You will not include the Index itself in your model.) 
+Using PCA and machine learning regression techniques, 
+produce a model that uses these features and any additional features you engineer (use your judgement) to predict the percent change in the USHPCI 3, 6 and 9 months ahead. 
+
+Each report should have two Chapters; first one of the CreditSCore problem and then one on the EconomicCycle problem.
+
+Each Chapter should have 6 subsections addressing the following topics: 
+
+1) Introduction/Exploratory Data Analysis, 
+2) Preprocessing, feature extraction, feature selection, 
+3) Model fitting and evaluation, (you should fit at least 3 different machine learning models)
+4) Hyperparameter tuning, 
+5) Ensembling and 
+6) Conclusions
+
+The report should have an Appendix with links to the code repository.  
+The report itself may include charts, graphs and tables, but should NOT include unformatted 'cut-and-pasted' output from Python. 
+
+The completed project will also have a cover page which lists the full names of all of the team members, page numbers, headings and subheadings.
+
+It will consist of a single pdf file labelled "IE598MLF_Group_project" and be uploaded through the Compass assignment submission page. emailed to the instructor at mdmurph @ illinois.edu with a cover page listing all of the students in the group.
+
+This project will count 25% of your course grade.
