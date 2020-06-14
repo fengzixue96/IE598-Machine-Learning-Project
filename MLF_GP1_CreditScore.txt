@@ -1,0 +1,6 @@
+MLF_GP1_CreditScore contains 1700 observations of 26 financial and accounting metrics changes for a set of firms in several different industries.
+
+The Class label is the Moody's credit rating assigned to the firm in the following quarter.  
+Certain ratings are considered "Investment Grade" (=1), 
+other ratings are not (=0) and consequently may not be held in certain institutional portfolios (pension plans, etc.)  
+This is real world data that has been modified for this exercise - it has been normalized, but does still contain some extreme outliers.
